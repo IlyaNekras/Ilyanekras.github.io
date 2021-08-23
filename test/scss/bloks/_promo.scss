@@ -1,0 +1,23 @@
+.promo{
+    padding: 50px 30px;
+    position: relative;
+    background: url('../../img/bg/bg3.jpg') center (center/cover) no-repeat;
+    min-height: 700px;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+    &__descr{
+        padding-left: 100px;
+        font-size: 15px;
+        line-height: 2;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+    }
+}
