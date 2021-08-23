@@ -1,0 +1,32 @@
+html{
+    scroll-behavior: smooth;
+}
+@import 'libs/fonts';
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+@import 'bloks/title';
+@import 'bloks/promo-header';
+@import 'bloks/button';
+@import 'bloks/composition';
+@import 'bloks/carousel';
+@import 'bloks/promo';
+@import 'bloks/order';
+@import 'bloks/animations';
+@import 'bloks/timer';
+@import 'bloks/media';
