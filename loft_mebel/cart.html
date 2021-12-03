@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Карточка товара</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu__burger"><img src="icons/menu-icon.svg" alt="menu-icon">
+            </div>
+            <div class="menu-content">
+                <div class="menu-content__exit"></div>
+                <ul class="menu-content__list">
+                    <li>
+                        <div class="menu-content__item">Меню</div>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/home-icon.svg" alt="home">
+                            <p class="menu-content__text">Главная</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/info-icon.svg" alt="info">
+                            <p class="menu-content__text">О нас</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/email-icon.svg" alt="email">
+                            <p class="menu-content__text">Контакты</p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="menu-content__item menu-content__item-category">Категории</div>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/kitchen-icon.svg" alt="kitchen">
+                            <p class="menu-content__text">Кухни</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/bedroom-icon.svg" alt="bedroom">
+                            <p class="menu-content__text">Спальни</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/livingroom-icon.svg" alt="livingroom">
+                            <p class="menu-content__text">Гостиные</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/closet-icon.svg" alt="closet">
+                            <p class="menu-content__text">Прихожие</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/office-icon.svg" alt="office">
+                            <p class="menu-content__text">Офисная мебель</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/childrensroom-icon.svg" alt="childrensroom">
+                            <p class="menu-content__text">Детская</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/stock.svg" alt="stock">
+                            <p class="menu-content__text"><span>Акция</span></p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/new-icon.svg" alt="new">
+                            <p class="menu-content__text">Новинки</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/mattress.svg" alt="mattress">
+                            <p class="menu-content__text">Матрасы</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/armchair.svg" alt="armchair">
+                            <p class="menu-content__text">Мягкая мебель</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/cupboard.svg" alt="cupboard">
+                            <p class="menu-content__text">Шкафы</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu__wrapper">
+                <div class="menu__logo">
+                    <a href="#"><img class="menu__logo" src="icons/logo.svg" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul class="menu__items">
+                        <li><a class="menu__item-link" href="#">Главная</a></li>
+                        <li><a class="menu__item-link" href="#">О нас</a></li>
+                        <li><a class="menu__item-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="menu__search">
+                    <img class="menu__search-icon" src="icons/search-icon.svg" alt="search-icon">
+                    <input class="menu__search-area" placeholder="Поиск" style="padding: 0 20px 0 40px;" type="text">
+                </div>
+
+                <div class="menu__phone">
+                    <img class="menu__phone-icon" src="icons/phone-icon.svg" alt="phone">
+                    <a class="menu__phone-num" href="tel:+89648999119">8 (964) 89 99 119</a>
+                </div>
+                <div class="menu__delivery">
+                    <img class="menu__delivery-icon" src="icons/delivery-icon.svg" alt="delivery">
+                    <a class="menu__delivery-link" href="#">Доставка</a>
+                </div>
+                <div class="menu__icons">
+                    <a class="menu__icons-chosen" href="#">
+                        <img src="icons/heart-icon.svg" alt="heart">
+                    </a>
+                    <a class="menu__icons-bag" href="#">
+                        <img src="icons/bag-icon.svg" alt="bag">
+                    </a>
+                    <a class="menu__icons-profile" href="#">
+                        <img src="icons/profile-icon.svg" alt="profile">
+                    </a>
+                </div>
+            </div>
+            <div class="menu__search-down">
+                <img class="menu__search-icon" src="icons/search-icon.svg" alt="search-icon">
+                <input class="menu__search-area" placeholder="Поиск" style="padding: 0 20px 0 40px;" type="text">
+            </div>
+            <ul class="menu__category-box">
+                <li class="menu__category menu__category_stock">
+                    <a class="menu__category-item" href="#">
+                        <img class="menu__category-iconblack" src="icons/stock.svg" alt="stock">
+                        <p class="menu__category-descr"><span>Акция</span></p>
+                    </a>
+                </li>
+                <li class="menu__category menu__category_new">
+                    <a class="menu__category-item" href="#">
+                        <img class="menu__category-iconblack" src="icons/new-icon.svg" alt="new">
+                        <p class="menu__category-descr">Новинки</p>
+                    </a>
+                </li>
+
+                <li class="menu__category">
+                    <a class="menu__category-item menu__category-item_img" href="#">
+                        <img class="menu__category-iconblack" src="icons/kitchen-icon.svg" alt="kitchen">
+                        <img class="menu__category-iconwhite" src="icons/kitchen-white.svg" alt="kitchen">
+                        <p class="menu__category-descr">Кухни</p>
+                    </a>
+                    <ul class="menu__category-links">
+                        <li>
+                            <a class="menu__category-link" href="#">Модульные кухни</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__category">
+                    <a class="menu__category-item" href="#">
+                        <img class="menu__category-iconblack" src="icons/bedroom-icon.svg" alt="bedroom">
+                        <img class="menu__category-iconwhite" src="icons/bedroom-white.svg" alt="bedroom">
+                        <p class="menu__category-descr">Спальни</p>
+                    </a>
+                    <ul class="menu__category-links">
+                        <li>
+                            <a class="menu__category-link" href="#">Модульные кухни</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__category">
+                    <a class="menu__category-item" href="#">
+                        <img class="menu__category-iconblack" src="icons/livingroom-icon.svg" alt="livingroom">
+                        <img class="menu__category-iconwhite" src="icons/livingroom-white.svg" alt="livingroom">
+                        <p class="menu__category-descr">Гостинные</p>
+                    </a>
+                    <ul class="menu__category-links">
+                        <li>
+                            <a class="menu__category-link" href="#">Модульные кухни</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__category">
+                    <a class="menu__category-item" href="#">
+                        <img class="menu__category-iconblack" src="icons/closet-icon.svg" alt="closet">
+                        <img class="menu__category-iconwhite" src="icons/closet-white.svg" alt="closet">
+                        <p class="menu__category-descr">Прихожие</p>
+                    </a>
+                    <ul class="menu__category-links">
+                        <li>
+                            <a class="menu__category-link" href="#">Модульные кухни</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__category menu__category-office">
+                    <a class="menu__category-item" href="#">
+                        <img class="menu__category-iconblack" src="icons/office-icon.svg" alt="office">
+                        <img class="menu__category-iconwhite" src="icons/office-white.svg" alt="office">
+                        <p class="menu__category-descr">Офисная мебель</p>
+                    </a>
+                    <ul class="menu__category-links">
+                        <li>
+                            <a class="menu__category-link" href="#">Модульные кухни</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__category menu__category-child">
+                    <a class="menu__category-item" href="#">
+                        <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg" alt="childrensroom">
+                        <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg" alt="childrensroom">
+                        <p class="menu__category-descr">Детская</p>
+                    </a>
+                    <ul class="menu__category-links">
+                        <li>
+                            <a class="menu__category-link" href="#">Модульные кухни</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                        <li>
+                            <a class="menu__category-link" href="#">Барная зона</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__category menu__category-stock">
+                    <a class="menu__category-stock menu__category-item" href="#">Акция</a>
+                </li>
+            </ul>
+            <ul class="menu__category-list">
+                <li><a class="menu__category-link menu__category-childlist" href="#">Детская</a></li>
+                <li><a class="menu__category-link menu__category-stocklist" href="#">Акция</a></li>
+                <li><a class="menu__category-link" href="#">Новинки</a></li>
+                <li><a class="menu__category-link" href="#">Матрасы</a></li>
+                <li><a class="menu__category-link" href="#">Шкафы</a></li>
+                <li><a class="menu__category-link" href="#">Мягкая мебель</a></li>
+            </ul>
+            <div class="menu__category-point"><img src="icons/point-btn.svg" alt=""></div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Главная</a></li>
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Гостинные</a></li>
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Мягкая мебель</a></li>
+                <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__link">Диваны</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="container">
+            <div class="cart__wrapper">
+                <div class="cart__carousel-box">
+                    <div class="cart__carousel-inner">
+                        <img class="cart__carousel-img1" src="img/furniture/sofa1.jpg" alt="image">
+                        <img class="cart__carousel-img1" src="img/furniture/sofa1.jpg" alt="image">
+                        <img class="cart__carousel-img1" src="img/furniture/sofa1.jpg" alt="image">
+                        <img class="cart__carousel-img1" src="img/furniture/sofa1.jpg" alt="image">
+                        <img class="cart__carousel-img1" src="img/furniture/sofa1.jpg" alt="image">
+                    </div>
+                    <div class="cart__carousel-items">
+                        <div class="cart__carousel-item">
+                            <img class="cart__carousel-img" src="img/furniture/sofa1.png" alt="image">
+                        </div>
+                        <div class="cart__carousel-item">
+                            <img class="cart__carousel-img" src="img/furniture/sofa1.png" alt="image">
+                        </div>
+                        <div class="cart__carousel-item">
+                            <img class="cart__carousel-img" src="img/furniture/sofa1.png" alt="image">
+                        </div>
+                        <div class="cart__carousel-item">
+                            <img class="cart__carousel-img" src="img/furniture/sofa1.png" alt="image">
+                        </div>
+                        <div class="cart__carousel-item">
+                            <img class="cart__carousel-img" src="img/furniture/sofa1.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__info">
+
+                    <a class="rate" href="#">
+                        <div class="rate-yo" data-rateyo-rating="4"></div>
+                    </a>
+                    <p class="cart__name">Динс Velvet Yellow</p>
+                    <p class="cart__subname">Диваны</p>
+                    <div class="cart__box">
+                        <div class="cart__item-box">
+                            <p class="cart__price">28 490₽</p>
+                        </div>
+                        <div class="cart__item-box"><button class="cart__btn">Купить</button></div>
+                        <div class="cart__item-box">
+                            <div class="cart__favorite">
+                                <div class="favorite favorite-cart">
+                                </div>
+                                <p>Добавить в желаемое</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-options">
+                        <div class="cart-options__num">
+                            <p class="cart-options__title">Количество</p>
+                            <div class="cart-options__select-box">
+                                <select class="cart-options__select filters-style">
+                                    <option class="cart-options__num">1</option>
+                                    <option class="cart-options__num">2</option>
+                                    <option class="cart-options__num">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cart-options__char">
+                            <p class="cart-options__title">Размер (Д × Ш × В)</p>
+                            <div class="cart-options__select-box">
+                                <select class="cart-options__select filters-style">
+                                    <option class="cart-options__char">218 СМ × 95 СМ × 90 СМ</option>
+                                    <option class="cart-options__char">222 СМ × 93 СМ × 93 СМ</option>
+                                    <option class="cart-options__char">233 СМ × 94 СМ × 92 СМ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__descr">
+                        <span>Описание</span>
+                        <p>Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван
+                            «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку.
+                            Элегантность,
+                            комфорт и функциональность, собранные воедино – «Динс» просто создан для размеренного
+                            отдыха
+                            в кругу семьи или компании друзей!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__tabs">
+                <div class="cart__items">
+                    <a class="cart__item cart__item_active" href="#char">Характеристики</a>
+                    <a class="cart__item" href="#reviews">Отзывы</a>
+                    <a class="cart__item" href="#delivery">Доставка и оплата</a>
+                </div>
+                <div id="char" class="cart__box-item cart__box-item_active">
+                    <div class="cart__character-inner ">
+                        <ul class="cart__left-content">
+                            <li>
+                                <p class="cart__feature-left">Размер</p>
+                                <p class="cart__feature-right">218 × 95 × 90 (Дл. × Шир. × Выс.)</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Спальное место</p>
+                                <p class="cart__feature-right">195 × 144 × 44 (Дл. × Шир. × Выс.)</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Посадочное место</p>
+                                <p class="cart__feature-right">50 × 44 (Глуб. × Выс.)</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Каркас</p>
+                                <p class="cart__feature-right">массив, фанера, ДВП, пружинная змейка</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Механизм</p>
+                                <p class="cart__feature-right">пантограф</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Материал ножек</p>
+                                <p class="cart__feature-right">массив</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Наполнение подушек</p>
+                                <p class="cart__feature-right">крошка ППУ, холлофайбер</p>
+                            </li>
+                        </ul>
+                        <ul class="cart__right-content">
+                            <li>
+                                <p class="cart__feature-left">Бельевой ящик</p>
+                                <p class="cart__feature-right">есть</p>
+                            </li>
+                            <li>
+                                <div class="cart__feature-left">Зарядное устройство USB</div>
+                                <p class="cart__feature-right">нет</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Съемный чехол</p>
+                                <p class="cart__feature-right">нет</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Декоративные подушки</p>
+                                <p class="cart__feature-right">есть</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Вариант доставки</p>
+                                <p class="cart__feature-right">в разобранном виде</p>
+                            </li>
+                            <li>
+                                <p class="cart__feature-left">Производитель</p>
+                                <p class="cart__feature-right">Россия</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="reviews" class="cart__box-item">
+                    <div class="cart__reviews-item">
+                        <div class="cart__reviews-img">
+                             <img src="img/photo.png" alt="photo">
+                        </div>
+                        <div class="cart__reviews-inner">
+                            <h4 class="cart__reviews-name">Мария Иванова</h4>
+                            <p class="cart__reviews-age">27 лет</p>
+                            <p class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
+                                индивидуальность. Сдержанный скандинавский дизайн - украшение для любой современной
+                                обстановки. Элегантный, комфортный и функциональный.</p>
+                        </div>
+                    </div>
+                    <div class="cart__reviews-item">
+                        <div class="cart__reviews-img">
+                            <img src="img/photo.png" alt="photo">
+                       </div>                        <div class="cart__reviews-inner">
+                            <h4 class="cart__reviews-name">Мария Иванова</h4>
+                            <p class="cart__reviews-age">27 лет</p>
+                            <p class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
+                                индивидуальность. Сдержанный скандинавский дизайн - украшение для любой современной
+                                обстановки. Элегантный, комфортный и функциональный.</p>
+                        </div>
+                    </div>
+                    <div class="cart__reviews-item">
+                        <div class="cart__reviews-img">
+                            <img src="img/photo.png" alt="photo">
+                       </div>                        <div class="cart__reviews-inner">
+                            <h4 class="cart__reviews-name">Мария Иванова</h4>
+                            <p class="cart__reviews-age">27 лет</p>
+                            <p class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
+                                индивидуальность. Сдержанный скандинавский дизайн - украшение для любой современной
+                                обстановки. Элегантный, комфортный и функциональный.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="delivery" class="cart__box-item">
+                    <p class="cart__delivery-info">доставка и оплата</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="catalog">
+        <div class="container">
+            <p>Хиты продаж</p>
+            <div class="catalog__items">
+                <div class="catalog__item">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/chair1.png" alt="chair1">
+                        <h4 class="catalog__name">Валенсия Beige</h4>
+                        <p class="catalog__subname">Барные стулья</p>
+                        <p class="catalog__price">2 300₽</p>
+                        <div class="catalog__price-box">
+                            <div class="catalog__price-new">28 490₽</div>
+                            <div class="catalog__price-old">37 990₽</div>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/chair2.png" alt="chair2">
+                        <h4 class="catalog__name">Толикс-2 White Gdivoss</h4>
+                        <p class="catalog__subname">Барные стулья</p>
+                        <p class="catalog__price">4 690₽</p>
+                        <div class="catalog__price-box">
+                            <div class="catalog__price-new">3 690₽</div>
+                            <div class="catalog__price-old">4 690₽</div>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item catalog__item-sale">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/sofa1.png" alt="sofa1">
+                        <h4 class="catalog__name">Динс Velvet Yelldivw</h4>
+                        <p class="catalog__subname">Диваны</p>
+                        <p class="catalog__price">37 990₽</p>
+                        <div class="catalog__price-box">
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/sofa2.png" alt="sofa2">
+                        <h4 class="catalog__name">Кускен Navy Bluediv</h4>
+                        <p class="catalog__subname">Диваны</p>
+                        <p class="catalog__price">37 990₽</p>
+                        <div class="catalog__price-box">
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/bed.png" alt="bed">
+                        <h4 class="catalog__name">Шерона Barhat Grdivy</h4>
+                        <p class="catalog__subname">Двухспальные кровати</p>
+                        <p class="catalog__price">21 990₽</p>
+                        <div class="catalog__price-box">
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">21 990₽</p>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/buffet.png" alt="buffet">
+                        <h4 class="catalog__name">Авиньон-1</h4>
+                        <p class="catalog__subname">Буфеты</p>
+                        <p class="catalog__price">18 990₽</p>
+                        <div class="catalog__price-box">
+                            <p class="catalog__price-new">16 490₽</p>
+                            <p class="catalog__price-old">18 990₽</p>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/dresser1.png" alt="dresser1">
+                        <h4 class="catalog__name">Стелла Дуб Соном</h4>
+                        <p class="catalog__subname">Комоды</p>
+                        <p class="catalog__price">8 990₽</p>
+                        <div class="catalog__price-box">
+                            <p class="catalog__price-new">6 490₽</p>
+                            <p class="catalog__price-old">8 990₽</p>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <button class="favorite"></button>
+                    <a href="#" class="catalog-item__link">
+                        <div class="catalog__item-percent">
+                            <img class="catalog__icon-percent" src="icons/stock.svg" alt="stock">
+                            <p class="catalog__text-percent">-25%</p>
+                        </div>
+                        <img class="catalog__img" src="img/furniture/dresser2.png" alt="dresser2">
+                        <h4 class="catalog__name">Равенна-1 Light</h4>
+                        <p class="catalog__subname">Комоды</p>
+                        <p class="catalog__price">14 990₽</p>
+                        <div class="catalog__price-box">
+                            <p class="catalog__price-new">8 490₽</p>
+                            <p class="catalog__price-old">14 990₽</p>
+                        </div>
+                    </a>
+                    <div class="catalog__item-hidden">
+                        <div class="catalog__dimensions">
+                            <p class="catalog__dimensions-size">Размеры</p>
+                            <div class="catalog__dimensions-info">
+                                <p class="catalog__dimensions-item">ширина 43см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">глубина 43 см</p>
+                                <span>x</span>
+                                <p class="catalog__dimensions-item">высота 77 см</p>
+                            </div>
+                        </div>
+                        <button class="catalog__btn" type="submit">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__navigation">
+                    <h3 class="footer__navigation-title">Навигация</h3>
+                    <div class="footer__navigation-links">
+                        <div>
+                            <a class="footer__category-link" href="#">Кухни</a>
+                            <a class="footer__category-link" href="#">Спальни</a>
+                            <a class="footer__category-link" href="#">Гостинные</a>
+                        </div>
+                        <div>
+                            <a class="footer__category-link" href="#">Прихожие</a>
+                            <a class="footer__category-link" href="#">Офисная мебель</a>
+                            <a class="footer__category-link" href="#">Детская</a>
+                        </div>
+                        <div>
+                            <a class="footer__category-link" href="#">Шкафы</a>
+                            <a class="footer__category-link" href="#">Матрасы</a>
+                            <a class="footer__category-link" href="#">Мягкая мебель</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer__address">
+                        <h3 class="footer__address-logo">LM</h3>
+                        <p>г. Анапа, Анапское шоссе,
+                            <br> 30 Ж/К Черное море</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-stock">
+                    <a class="footer__contacts-item" href="#"><span>Акция</span></a>
+                    <a class="footer__contacts-item" href="#">Новинки</a>
+                </div>
+                <div class="footer__contacts-social">
+                    <a class="footer__contacts-phone" href="tel:+79648999119">
+                        <img src="icons/phone-icon.svg" alt="phone">
+                        <p>8 (964) 89 99 119</p>
+                    </a>
+                    <a class="footer__contacts-inst" href="#">
+                        <img src="icons/instagram-icons.svg" alt="instagram">
+                        <p>instagram</p>
+                    </a>
+                    <a class="footer__contacts-mail" href="#">
+                        <img src="icons/mail-icons.svg" alt="mail">
+                        <p>mebel_loft_anapa@mail.ru</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src=" js/main.js"></script>
+</body>
+
+</html>
